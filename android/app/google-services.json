@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "283168727064",
+    "firebase_url": "https://fooddeliverybackend-default-rtdb.firebaseio.com",
+    "project_id": "fooddeliverybackend",
+    "storage_bucket": "fooddeliverybackend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283168727064:android:29cb552e358b513a13a36d",
+        "android_client_info": {
+          "package_name": "com.example.shopify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283168727064-bnoe2clsqeje0le366chvfbsf532ns97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFE5q-yOoN_XwX_JBQ_-JQgOp45jmLggM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283168727064-bnoe2clsqeje0le366chvfbsf532ns97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
