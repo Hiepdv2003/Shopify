@@ -4,14 +4,14 @@ import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
 
 class OnBoardingPage extends StatelessWidget {
+  final String image, title, subTitle;
+
   const OnBoardingPage({
     super.key,
     required this.image,
     required this.title,
     required this.subTitle,
   });
-
-  final String image, title, subTitle;
 
   @override
   Widget build(BuildContext context) {

@@ -1,20 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:shopify/features/authentication/controllers.onboarding/onboarding_controller.dart';
-import 'package:shopify/features/authentication/screens/onboarding/widgets/onboarding_dot_naviagtion.dart';
-import 'package:shopify/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
-import 'package:shopify/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:shopify/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:shopify/utils/constants/colors.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:shopify/features/authentication/views/onboarding/widgets/onboarding_dot_naviagtion.dart';
+import 'package:shopify/features/authentication/views/onboarding/widgets/onboarding_next_button.dart';
+import 'package:shopify/features/authentication/views/onboarding/widgets/onboarding_page.dart';
+import 'package:shopify/features/authentication/views/onboarding/widgets/onboarding_skip.dart';
 import 'package:shopify/utils/constants/text_strings.dart';
-import 'package:shopify/utils/device/device_utility.dart';
-import 'package:shopify/utils/helpers/helper_functions.dart';
 
 import '../../../../utils/constants/image_strings.dart';
-import '../../../../utils/constants/sizes.dart';
+import '../../controllers/onboarding/onboarding_controller.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});

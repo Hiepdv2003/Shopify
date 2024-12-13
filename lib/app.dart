@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:shopify/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:shopify/features/authentication/views/onboarding/onboarding.dart';
 import 'package:shopify/utils/constants/text_strings.dart';
 import 'package:shopify/utils/theme/theme.dart';
 
@@ -17,6 +16,7 @@ class MyApp extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
+      // initialBinding: GeneralBindings(),
       home: const OnBoardingScreen(),
     );
   }
