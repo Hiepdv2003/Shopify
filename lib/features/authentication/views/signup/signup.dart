@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:shopify/features/authentication/views/signup/widgets/signup_form.dart';
 import 'package:shopify/utils/constants/sizes.dart';
 
+import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/login_signup/form_divider.dart';
 import '../../../../common/widgets/login_signup/social_buttons.dart';
 import '../../../../utils/constants/text_strings.dart';
@@ -13,7 +14,7 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: const TAppBar(showBackArrow: true),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(TSizes.defaultSpace),

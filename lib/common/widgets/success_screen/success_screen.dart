@@ -6,9 +6,15 @@ import '../../../utils/constants/text_strings.dart';
 import '../../../utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.image, required this.title, required this.subTitle, required this.onPressed});
+  const SuccessScreen({
+    super.key,
+    required this.image,
+    required this.title,
+    required this.subtitle,
+    required this.onPressed,
+  });
 
-  final String image, title, subTitle;
+  final String image, title, subtitle;
   final VoidCallback onPressed;
 
   @override
@@ -19,29 +25,34 @@ class SuccessScreen extends StatelessWidget {
           padding: TSpacingStyle.paddingWithAppBarHeight * 2,
           child: Column(
             children: [
-              /// Images
+              /// Image
               Image(
-                image: AssetImage(image),
                 width: THelperFunctions.screenWidth() * 0.6,
+                image: AssetImage(image),
               ),
               const SizedBox(height: TSizes.spaceBtwSections),
 
-              /// Title & subtitle
-              Text(title,
-                  style: Theme.of(context).textTheme.headlineMedium,
-                  textAlign: TextAlign.center),
+              /// Title & SubTitle
+              Text(
+                title,
+                style: Theme.of(context).textTheme.headlineMedium,
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: TSizes.spaceBtwItems),
-              Text(subTitle,
-                  style: Theme.of(context).textTheme.labelMedium,
-                  textAlign: TextAlign.center),
+              Text(
+                subtitle,
+                style: Theme.of(context).textTheme.labelMedium,
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: TSizes.spaceBtwSections),
 
-              ///Buttons
+              /// Buttons
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: onPressed,
-                    child: const Text(TTexts.tContinue)),
+                  onPressed: onPressed,
+                  child: const Text(TTexts.tContinue),
+                ),
               ),
             ],
           ),

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:shopify/features/authentication/views/password_configuration/reset_password.dart';
+import 'package:shopify/features/authentication/views/password_configuration/forget_password.dart';
 import 'package:shopify/features/authentication/views/signup/signup.dart';
 import 'package:shopify/navigation_menu.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
-import '../../password_configuration/forget_password.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm({

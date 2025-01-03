@@ -4,7 +4,8 @@ import 'curved_edges.dart';
 
 class TCurvedEdgeWidget extends StatelessWidget {
   const TCurvedEdgeWidget({
-    super.key, required this.child,
+    super.key,
+    required this.child,
   });
 
   final Widget child;
@@ -12,7 +13,7 @@ class TCurvedEdgeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipPath(
-      clipper: TCustomeCurvedEdges(),
+      clipper: TCustomCurvedEdges(),
       child: child,
     );
   }
